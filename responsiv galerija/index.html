@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Verdana, Tahoma, sans-serif;
+            margin: 0 auto;
+        }
+
+
+        .main {
+            display: grid;
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 10px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 30px;
+            justify-items: center;
+        }
+
+        header {
+            grid-row: 1 / 1;
+            grid-column: 1 / 6;
+            width: 100%;
+            text-align: left;
+        }
+
+        
+
+        .figure {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 3px 3px 3px #e5f2ff,
+                       -3px -3px 3px #e5f2ff;
+
+        }
+
+        .image {
+            background-color: #1d82e7;
+            width: 100%;
+            padding: 0;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+        }
+
+        .imgpar {
+            margin: 0 auto;
+            padding: 5px;
+            text-align: center;
+            font-size: 8px;
+        }
+
+        .text {
+            margin: 0 auto;
+            grid-area: 4 / 1 / 5 / 6
+        }
+
+        @media screen and (max-width: 1024px) {
+            .main {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .main {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            header {
+                grid-row: 1 / 1;
+                grid-column: 1 / 4;
+            }
+
+            .text {
+                grid-area: 6 / 1 / 6 / 4;
+                
+            }
+        }
+
+
+        @media screen and (max-width: 416px) {
+            .main {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            header {
+                grid-row: 1 / 1;
+                grid-column: 1 / 1;
+            }
+
+            .text {
+                grid-area: 12 / 1 / 12 / 1;
+            }
+        }
+    </style>
+    <title>Galerija</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <header>
+            <h1>Gallery Heading</h1>
+        </header>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <div class="figure"><img src="placeholder-image.png" alt="placeholder-image" class="image">
+            <div class="imgtext">
+                <p class="imgpar">Image Title</p>
+            </div>
+        </div>
+        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsa dignissimos neque
+            dolores, illo necessitatibus. Ad impedit sit odio eaque eius dolores, eligendi error a voluptatibus,
+            delectus hic necessitatibus repellat exercitationem, nam quidem. Rerum quos velit, nostrum a repellendus
+            nemo quod quas perferendis sint. Repudiandae maxime corporis dolorem, veritatis, recusandae quo quae saepe
+            voluptatum labore ut ducimus laudantium in fugit itaque reprehenderit? Sed nisi est voluptate nihil aperiam
+            ipsum aspernatur, commodi consequuntur magnam neque possimus maiores laboriosam vitae incidunt quo assumenda
+            ad deleniti iusto recusandae autem consectetur? Quasi, blanditiis adipisci. Ut eveniet, voluptatem
+            repellendus quae est itaque? Omnis, libero sint.</p>
+    </div>
+</body>
+
+</html>
