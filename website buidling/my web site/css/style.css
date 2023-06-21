@@ -1,0 +1,98 @@
+body {
+    font-family: sans-serif;
+}
+
+/***********************Header section********************/
+
+header a {
+    color: grey;
+    margin-left: 24px;
+}
+
+header a:visited {
+    color: grey;
+}
+
+header a:hover {
+    color: black;
+}
+
+#manu-img {
+    width: 15px;
+}
+
+
+/***********************Hero section********************/
+
+figure {
+    position: relative;
+
+}
+
+#slogan {
+    color: white;
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+    font-size: 20px;
+    text-shadow: 0 0 1px white;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 992px) {
+    #slogan {
+        font-size: 20px;
+        left: 5rem;
+        top: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #slogan {
+        font-size: 14px;
+        top: 50%;
+        left: 0;
+        transform: translate(5%,-60%);
+        
+        
+    }
+}
+
+/***********************SECONDARY section********************/
+
+
+/***********************RECENT section********************/
+
+#recent-section p {
+    font-size: 0.80rem;
+}
+
+/***********************BLOG section********************/
+
+/* #blog-section p{
+    font-size: 0.80rem;
+} */
+
+
+/***********************info section********************/
+
+#about {
+    font-size: 0.85rem;
+}
+
+#work p {
+    font-size: 0.82rem;
+}
+
+#post p {
+    font-size: 0.82rem;
+}
+
+/***********************Footer section********************/
+footer {
+    background-color: black;
+}
+#nesto {
+    height: 100px;
+}
